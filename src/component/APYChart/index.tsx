@@ -2,15 +2,15 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { APYChartWrapper } from "./style";
 
-const listAPY = [160, 170, 165, 189, 178];
+const listAPY = [15, 20, 17, 18, 14];
 const listIL = [80, 50, 60, 75, 55];
 const listDate = [
+  "2022-05-18",
+  "2022-05-19",
+  "2022-05-20",
   "2022-05-21",
   "2022-05-22",
   "2022-05-23",
-  "2022-05-24",
-  "2022-05-25",
-  "2022-05-26",
 ];
 
 const APYChart = () => {
@@ -99,6 +99,7 @@ const APYChart = () => {
               data: listAPY,
               type: "spline",
               lineColor: "#4f46e5",
+              max: 70,
               yAxis: 0,
               fillColor: {
                 linearGradient: [0, 0, 0, 300],
