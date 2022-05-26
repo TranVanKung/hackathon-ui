@@ -28,12 +28,7 @@ const MainPage = () => {
 
     if (data) {
       return data
-        ?.filter(
-          (pool: any) =>
-            Boolean(pool?.amount) ||
-            Boolean(pool?.imploss) ||
-            Boolean(pool?.pnl)
-        )
+        ?.filter((pool: any) => Boolean(pool?.amount) && Boolean(pool?.imploss))
         ?.map((pool: any, index: number) => (
           <PoolItem
             token0Symbol={pool?.poolInfo?.token0?.symbol}

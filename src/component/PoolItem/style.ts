@@ -9,6 +9,7 @@ const PoolItemWrapper = styled.div`
   padding: var(--padding);
   border-radius: var(--border-radius);
   margin-bottom: var(--margin-bottom);
+  box-shadow: var(--box-shadow);
   background-image: ${({ theme }) =>
     `linear-gradient(to right, rgba(79, 70, 229, 0.06), rgba(237, 83, 224, 0.09), rgba(79, 70, 229, 0.06))`};
 
@@ -35,10 +36,14 @@ const PoolItemWrapper = styled.div`
     .list-icon {
       margin-left: auto;
       display: flex;
+      align-items: center;
 
       .item {
         cursor: pointer;
         margin-left: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         & * {
           font-size: 1.9rem;
@@ -171,7 +176,7 @@ const CoinImageWrapper = styled.div`
     border-radius: 50%;
     height: 2.2rem;
     width: 2.2rem;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 `;
 

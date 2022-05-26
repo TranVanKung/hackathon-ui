@@ -159,22 +159,22 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-
   .custom-date-picker {
     background-color: rgba(133, 122, 233, 0.15) !important;
     border-radius: 0.4rem !important;
     outline: none !important;
     border: 1px solid transparent !important;
     
+    
     .ant-picker-input * {
-      font-weight: 500 !important;
+      font-size: 1.3rem !important;
 
       @media only screen and (max-width: 834px) {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
 
       @media only screen and (max-width: 550px) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
     }
   }
