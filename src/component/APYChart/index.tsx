@@ -2,7 +2,7 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { APYChartWrapper } from "./style";
 
-const listAPY = [15, 20, 17, 18, 14];
+const listAPY = [15, 15.5, 14.4, 14.7, 14.5];
 const listIL = [80, 50, 60, 75, 55];
 const listDate = [
   "2022-05-18",
@@ -59,6 +59,8 @@ const APYChart = () => {
                 },
               },
               gridLineWidth: 0.1,
+              min: 0,
+              max: 100,
             },
             {
               // Secondary yAxis
